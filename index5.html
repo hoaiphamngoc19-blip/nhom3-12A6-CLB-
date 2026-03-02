@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html <head>
+<meta charset="utf-8">
+<link href="styles.css" rel="stylesheet" type="text/css">
+</head>
+<!-- Nhạc nền phát liên tục -->
+<audio id="nhacNen" autoplay loop>
+<source src="nhac_1.mp3" type="audio/mpeg">
+</audio>
+
+<body>
+ <header>
+  <div class="banner">
+   <h1>Câu lạc bộ ngoại khóa Trường THPT Krông Bông</h1>
+  </div>
+  <div class="slogan">
+   <div class="row">
+    <div class="block_3">
+     <h2>Năng động</h2>
+     <p>Hoạt động năng nổ và vui vẻ</p>
+    </div>
+    <div class="block_3">
+     <h2>Đam mê</h2>
+     <p>Cháy hết mình trong các cuộc chơi</p>
+    </div>
+    <div class="block_3">
+     <h2>Tỏa sáng</h2>
+     <p>Giành những giải thưởng cao </p>
+    </div>
+   </div>
+  </div>
+ </header>
+ <table>
+  <tr>
+   <td class="cell_text">
+    <h3>Học siêu - Chơi đỉnh</h3>
+    <p>Các thành tích đạt được:</p>
+    <ul>
+     <li>giải ba stem cấp tỉnh</li>
+     <li>tuyên dương học sinh 3 tốt</li>
+     <li> giải Bóng chuyền nam</li>
+     <li>hội thi học sinh giỏi</li>
+    </ul>
+   </td>
+   <td class="cell_img">
+    <img src="img/FB_IMG_1772400471512~2.jpg" class="img">
+   </td>
+   </td>
+  </tr>
+  <tr>
+   <td class="cell_img">
+    <img src="img/img-4.jpg" class="img">
+   </td>
+   <td class="cell_text">
+    <h3>CLB Khoa học-Kĩ thuật STEM</h3>
+    <ul>
+     <li>stem công nghệ</li>
+     <li>stem kĩ thuật</li>
+     <li>stem khoa học</li>
+     <li>stem toán học</li>
+    </ul>
+    <a href="stem.html">Chi tiết</a>
+   </td>
+  </tr>
+  <tr>
+   <td class="cell_text">
+    <h3>CLB Nghệ thuật</h3>
+    <ul>
+     <li>Mĩ thuật</li>
+     <li>Nhiếp ảnh</li>
+     <li>Âm nhạc</li>
+     <li>Khiêu vũ</li>
+    </ul>
+    <a href="nghethuat.html">Chi tiết</a>
+   </td>
+   <td class="cell_img">
+    <img src="img/img-3.jpg" class="img">
+   </td>
+  </tr>
+ </table>
+ <footer>
+  <div class="row">
+   <div style="width:60%">
+    <p>Liên hệ:</p>
+    <ul>
+     <li>Điện thoại: 0123456789</li>
+     <li>Website:
+      <a href="index.html" class="link">
+CLB Ngoại khóa Trường THPT Krông Bông
+</a>
+     </li>
+    </ul>
+   </div>
+   <div style="width:10%"></div>
+   <div style="width:30%">
+    <p>Xem chi tiết:</p>
+    <ul>
+     <li><a href="Thethao.html" class="link">Trang web CLB Thể thao</a></li>
+     <li><a href="nghethuat.html" class="link">Trang web CLB Nghệ thuật</a></li>
+    </ul>
+   </div>
+  </div>
+ </footer>
+ <!-- ===== Script tạo lá rơi ===== -->
+</body>
+
+<style>/* ===== Hiệu ứng lá rơi ===== */
+.leaf {
+    position: fixed;
+    top: -50px;
+    font-size: 24px;
+    animation: fall linear infinite;
+    z-index: 9999;
+}
+
+@keyframes fall {
+    0% {
+        transform: translateY(0) rotate(0deg);
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(100vh) rotate(360deg);
+        opacity: 0;
+    }
+}
+
+/* ===== Chữ toàn trang ===== */
+html {
+    color: darkviolet;
+    font-size: 25px;
+    font-weight: 600;
+}
+
+/* ===== Banner ===== */
+.banner {
+    background: url("FB_IMG_1772400471512~2.jpg") no-repeat center center;
+    
+    background-size: cover;
+    padding-top: 12rem;
+    padding-bottom: 12rem;
+    text-align: center !important;
+    color: darkred !important;
+}
+
+.slogan {
+    text-align: center !important;
+    width: 100%;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: -1;
+    max-width: 100%;
+    padding-right: 3rem;
+    padding-left: 3rem;
+    background-color: lightgrey;
+}
+
+.block_3 {
+    flex: 0 auto;
+    width: 30%;
+    margin: 10px;
+}
+
+.cell_img {
+    width: 50%;
+}
+
+.cell_text {
+    width: 50%;
+    padding-left: 5rem;
+}
+
+.img {
+    width: 100%;
+    height: 100%;
+}
+
+footer {
+    background-color: lightgrey;
+    margin: 1px;
+    padding: 10px;
+}
+
+.link {
+    color: navy;
+    text-align: left;
+}
+
+.menu {
+    font-size: 120%;
+    text-decoration: none;
+}</style><script>// Fix lỗi không tự phát trên một số trình duyệt
+    document.addEventListener("click", function () {
+        var audio = document.getElementById("nhacNen");
+        audio.play();
+    });function createLeaf() {
+        const leaf = document.createElement("div");
+        leaf.classList.add("leaf");
+        leaf.innerHTML = "🍂";
+
+        leaf.style.left = Math.random() * window.innerWidth + "px";
+        leaf.style.animationDuration = (3 + Math.random() * 5) + "s";
+
+        document.body.appendChild(leaf);
+
+        setTimeout(() => {
+            leaf.remove();
+        }, 8000);
+    }
+
+    setInterval(createLeaf, 500);/*Here write your javascript code*/</script></html>
