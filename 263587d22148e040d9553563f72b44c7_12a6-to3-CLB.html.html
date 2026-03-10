@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<title>CLB Ngoại khóa</title>
+
+<style>
+body{
+    margin:0;
+    font-family:Arial;
+    background:linear-gradient(135deg,#1e3c72,#2a5298);
+    perspective:1200px;
+}
+
+/* ===== 3D chung ===== */
+header, table, footer, .block_3, .cell_text, .cell_img, img{
+    transition:0.6s;
+    transform-style:preserve-3d;
+}
+
+header:hover,
+.block_3:hover,
+.cell_text:hover,
+.cell_img:hover,
+img:hover,
+footer:hover{
+    transform:rotateY(10deg) rotateX(5deg) scale(1.05);
+}
+
+/* ===== Banner ===== */
+.banner{
+    text-align:center;
+    padding:40px;
+    color:white;
+}
+
+.banner h1{
+    font-size:32px;
+}
+
+/* ===== slogan ===== */
+.row{
+    display:flex;
+    justify-content:center;
+    gap:20px;
+    padding:20px;
+}
+
+.block_3{
+    background:white;
+    padding:20px;
+    border-radius:15px;
+    width:250px;
+    box-shadow:0 10px 20px rgba(0,0,0,0.4);
+}
+
+/* ===== table ===== */
+table{
+    width:90%;
+    margin:30px auto;
+    background:white;
+    border-radius:15px;
+    box-shadow:0 15px 30px rgba(0,0,0,0.5);
+}
+
+td{
+    padding:20px;
+}
+
+.cell_img img{
+    width:100%;
+    border-radius:15px;
+}
+
+/* ===== footer ===== */
+footer{
+    background:#111;
+    color:white;
+    padding:30px;
+}
+footer a{
+    color:#00ffff;
+    text-decoration:none;
+}
+footer a:hover{
+    color:yellow;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <div class="banner">
+        <h1>Câu lạc bộ ngoại khóa Trường THPT Krông Bông</h1>
+    </div>
+
+    <div class="slogan">
+        <div class="row">
+            <div class="block_3">
+                <h2>Năng động</h2>
+                <p>Hoạt động năng nổ và vui vẻ</p>
+            </div>
+
+            <div class="block_3">
+                <h2>Đam mê</h2>
+                <p>Cháy hết mình trong các cuộc chơi</p>
+            </div>
+
+            <div class="block_3">
+                <h2>Tỏa sáng</h2>
+                <p>Giành những giải thưởng cao nhất</p>
+            </div>
+        </div>
+    </div>
+</header>
+<table>
+<tr>
+    <td class="cell_text">
+        <h3>Học siêu - Chơi đỉnh</h3>
+        <p>Các thành tích đạt được:</p>
+        <ul>
+            <li> giải bóng chuyền nam nữ</li>
+            <li> giải nhất học sinh giỏi cấp tỉnh</li>
+            <li> giải nhất Bóng đá nam</li>
+            <li> giải nhì Hội thi biểu diễn stem cấp tỉnh</li>
+        </ul>
+    </td>
+    <td class="cell_img">
+        <img src="img/img-2.jpg">
+    </td>
+</tr>
+
+<tr>
+    <td class="cell_img">
+        <img src="img/img-4.jpg">
+    </td>
+    <td class="cell_text">
+        <h3>CLB Thể thao</h3>
+        <ul>
+            <li>Bóng đá</li>
+            <li>Bóng chuyền</li>
+            <li>Bóng rổ</li>
+            <li>Cầu lông</li>
+            <li>GDQP an ninh</li
+        </ul>
+        <a href="CLB.html.html">Chi tiết</a>
+    </td>
+</tr>
+<tr>
+    <td class="cell_text"><h3>CLB học sinh 3 tốt</h3>
+        <ul>
+            <li>học sinh cố gắng phấn đấu thành tích cao trong học tập và được tuyên dương trong quá trình học tập và phấn đấu </li>
+        </ul>
+        <a href="nghethuat.html">Chi tiết</a>
+    </td>
+    <td class="cell_img">
+        <img src="img/img-3.jpg">
+    </td>
+</tr>
+</table>
+
+<footer>
+    <div class="row">
+        <div style="width:60%">
+            <p>Liên hệ:</p>
+            <ul>
+                <li>Điện thoại: 0123456789</li>
+                <li>Website:
+                    <a href="index.html">CLB Ngoại khóa Trường Nguyễn Bỉnh Khiêm</a>
+                </li>
+            </ul>
+        </div>
+
+        <div style="width:30%">
+            <p>Xem chi tiết:</p>
+            <ul>
+                <li><a href="thethao.html">Trang web CLB Thể thao</a></li>
+                <li><a href="học sinh 3 tốt.html">Trang web CLB học sinh 3 tốt</a></li>
+            </ul>
+        </div>
+    </div>
+</footer>
+
+</body>
+<style>html{
+ color:darkviolet;
+ font-size:25px;
+ font-weight:600;
+}
+</style><script>/*Here write your javascript code*/</script></html>
